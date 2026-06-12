@@ -1,0 +1,19 @@
+@mixin textStyle($size, $height, $weight: 600) {
+    font-family: "Inter", sans-serif;
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $height;
+}
+
+@mixin tr($time: 1s) {
+    transition: $time;
+}
+
+@mixin titleAdaptive() {
+    @media (max-width: 750px) {
+        @include textStyle(42px, 60px);
+    }
+    @media (max-width: 500px) {
+        @include textStyle(32px, 40px);
+    }
+}
