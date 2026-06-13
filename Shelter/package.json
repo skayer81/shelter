@@ -10,6 +10,7 @@
     "deploy": "gh-pages -d dist -e shelter"
   },
   "devDependencies": {
+    "sass-embedded": "^1.100.0",
     "vite": "^8.0.12"
   }
 }

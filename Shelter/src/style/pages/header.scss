@@ -1,0 +1,92 @@
+@import "./../variables.scss";
+
+.header {
+    .logo:hover {
+        .header-title {
+            transition: 0.5s;
+            color: $colorPrimaryL;
+        }
+        .header-subtitle {
+            transition: 0.5s;
+            color: $colorPrimaryL;
+        }
+    }
+
+    .header-title {
+        color: $colorPrimary;
+        font-family: Georgia, "Times New Roman", Times, serif;
+
+        font-size: 32px;
+
+        line-height: 35.2px;
+        letter-spacing: 0.06em;
+
+        transition: 0.5s;
+    }
+    .header-subtitle {
+        transition: 0.5s;
+        margin-top: 8px;
+        margin-left: 4px;
+        color: $colorLightXL;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 14.95px;
+        letter-spacing: 0.1em;
+        text-align: left;
+    }
+    .pets .header-subtitle,
+    .pets .header-title {
+        color: $colorDarkL;
+    }
+
+    .navigation {
+        display: flex;
+        align-items: center;
+        .navigation-list {
+            display: flex;
+            column-gap: 36px;
+            &.active {
+                color: $colorLightS;
+            }
+            .nav-button {
+                border: none;
+                padding: 0;
+                color: $colorDarkS;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 15px;
+                line-height: 24px;
+                transition: 0.5s;
+                border-bottom: 3px solid transparent;
+                &:hover {
+                    color: $colorPrimaryL;
+                }
+            }
+        }
+    }
+    .home .nav-button.home-active {
+        color: $colorLightL;
+        border-bottom: 2px solid $colorPrimary;
+        cursor: auto;
+        &:hover {
+            color: $colorLightL;
+        }
+    }
+
+    .pets .navigation .navigation-list .nav-button {
+        color: $colorDarkL;
+        transition: 0.5s;
+        &.pets-active {
+            color: $colorDark3XL;
+            border-bottom: 3px solid $colorPrimary;
+            cursor: auto;
+            &:hover {
+                color: $colorDark3XL;
+            }
+        }
+
+        &:hover {
+            color: $colorPrimaryL;
+        }
+    }
+}
