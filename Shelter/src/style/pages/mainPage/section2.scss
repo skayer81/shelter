@@ -1,0 +1,38 @@
+@import "./../../variables.scss";
+.section2 {
+    .container {
+        display: flex;
+    }
+    .back {
+        background-image: url("./backgrounds/about-pets.png");
+        width: 50%;
+        height: auto;
+        background-repeat: no-repeat;
+        background-position-x: 175px;
+        background-position-y: 79px;
+    }
+    .content {
+        padding-top: 93px;
+        padding-bottom: 113px;
+        margin-left: -5px;
+        padding-right: 170px;
+        color: $colorDarkXL;
+        width: 50%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+
+        line-height: 24px;
+        .title {
+            color: $colorDarkL;
+            padding-right: 20px;
+            font-family: Georgia, "Times New Roman", Times, serif;
+            font-size: 35px;
+            font-weight: 400;
+            line-height: 45.5px;
+            letter-spacing: 0.06em;
+        }
+        .description {
+            margin-top: 25px;
+        }
+    }
+}
