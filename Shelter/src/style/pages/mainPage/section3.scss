@@ -1,0 +1,107 @@
+@import "./../../variables.scss";
+
+.section3 {
+    background-color: $colorLightL;
+    padding-bottom: 101px;
+
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .title {
+        color: $colorDarkL;
+        font-family: Georgia;
+        font-size: 35px;
+        font-weight: 400;
+        line-height: 45.5px;
+        letter-spacing: 0.06em;
+        text-align: center;
+    }
+    .section-title {
+        padding-top: 78px;
+        width: 470px;
+    }
+    .slider {
+        display: flex;
+        align-items: center;
+        margin-top: 60px;
+        .button {
+            width: 52px;
+            height: 52px;
+            border: 1px solid $colorPrimary;
+            border-radius: 50%;
+            background-image: url("./backgrounds/arrow.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            &.rightbutton {
+                transform: rotate(0.5turn);
+            }
+            &:hover {
+                background-color: $colorPrimaryL;
+                border-color: $colorPrimaryL;
+            }
+        }
+        .slider-container {
+            display: flex;
+
+            column-gap: 89px;
+            margin: 0 53px;
+        }
+        .slider-card {
+            width: 270px;
+            height: 435px;
+            background-color: $colorLightS;
+            text-align: center;
+            border-radius: 9px;
+            transition: 0.5s;
+            &:hover {
+                box-shadow: 0px 2px 35px 14px #0d0d0d0a;
+
+                .cardbutton {
+                    background-color: $colorPrimaryL;
+                    border-color: $colorPrimaryL;
+                }
+            }
+
+            .title {
+                margin-top: 32px;
+                font-size: 20px;
+                line-height: 22.72px;
+            }
+            .cardbutton {
+                color: $colorDark3XL;
+                font-family: Georgia;
+                font-size: 17px;
+                font-weight: 400;
+                line-height: 22.1px;
+                letter-spacing: 0.06em;
+                width: 187px;
+                height: 52px;
+                border: 1px solid $colorPrimary;
+                margin-top: 31px;
+                border-radius: 40px;
+                &:hover {
+                    background-color: $colorPrimaryL;
+                }
+            }
+        }
+    }
+    .section3button {
+        margin-top: 61px;
+        font-family: Georgia;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 22.1px;
+        letter-spacing: 0.06em;
+        color: $colorDark3XL;
+        background-color: $colorPrimary;
+        padding: 14px 44px;
+        border: 1px solid $colorPrimary;
+        border-radius: 40px;
+        &:hover {
+            background-color: $colorPrimaryL;
+            border-color: $colorPrimaryL;
+        }
+    }
+}
