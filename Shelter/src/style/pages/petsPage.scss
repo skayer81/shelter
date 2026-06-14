@@ -1,0 +1,107 @@
+@import "./../variables.scss";
+
+.section-pets {
+    background-color: $colorLightL;
+    padding-bottom: 101px;
+
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .title {
+        color: $colorDarkL;
+        font-family: Georgia;
+        font-size: 35px;
+        font-weight: 400;
+        line-height: 45.5px;
+        letter-spacing: 0.06em;
+        text-align: center;
+    }
+    .section-title {
+        padding-top: 78px;
+        width: 470px;
+        margin-bottom: 60px;
+    }
+    .section-cards {
+        display: flex;
+        justify-content: center;
+        row-gap: 30px;
+        column-gap: 40px;
+        flex-wrap: wrap;
+        margin-bottom: 63px;
+    }
+
+    .slider-card {
+        width: 270px;
+        height: 435px;
+        background-color: $colorLightS;
+        text-align: center;
+        transition: 0.5s;
+        &:hover {
+            box-shadow: 0px 2px 35px 14px #0d0d0d0a;
+
+            .cardbutton {
+                background-color: $colorPrimaryL;
+                border-color: $colorPrimaryL;
+            }
+        }
+
+        .title {
+            margin-top: 32px;
+            font-size: 20px;
+            line-height: 22.72px;
+        }
+        .cardbutton {
+            color: $colorDark3XL;
+            font-family: Georgia;
+            font-size: 17px;
+            font-weight: 400;
+            line-height: 22.1px;
+            letter-spacing: 0.06em;
+            width: 187px;
+            height: 52px;
+            border: 1px solid $colorPrimary;
+            margin-top: 31px;
+            border-radius: 40px;
+        }
+    }
+    .pagination {
+        display: flex;
+        justify-content: center;
+        column-gap: 22px;
+
+        .pagination-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            width: 50px;
+            height: 50px;
+            border: 1px solid $colorPrimary;
+            color: $colorDark3XL;
+            border-radius: 50%;
+            font-family: Georgia;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 23px;
+            letter-spacing: 0.06em;
+            &:hover {
+                background-color: $colorPrimaryL;
+                border-color: $colorPrimaryL;
+                pointer-events: none;
+            }
+            &.counter {
+                background-color: $colorPrimary;
+            }
+            &.disabled {
+                border-color: $colorDarkS;
+                color: $colorDarkS;
+                cursor: not-allowed;
+                &:hover {
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}
