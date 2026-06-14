@@ -41,4 +41,40 @@
         text-align: center;
         padding-top: 89px;
     }
+
+    .food {
+        background-image: url("./../../../../public/howHelp/icon-pet-food.svg");
+    }
+    .transportation {
+        background-image: url("/howHelp/transportation.svg");
+    }
+    .toys {
+        background-image: url("./../../../../public/howHelp/toys.svg");
+    }
+    .bowls {
+        background-image: url("./../../../../public/howHelp/bowls-and-cups.svg");
+    }
+    .shampoos {
+        background-image: url("./../../../../public/howHelp/shampoos.svg");
+    }
+    .vitamins {
+        background-image: url("./../../../../public/howHelp/vitamins.svg");
+    }
+    .medicines {
+        background-image: url("./../../../../public/howHelp/medicines.svg");
+    }
+    .collars {
+        background-image: url("./../../../../public/howHelp/collars-or-leashes.svg");
+    }
+    .areas {
+        background-image: url("./../../../../public/howHelp/sleeping-area.svg");
+    }
+    // <li class="help-item transportation">Transportation</li>
+    // <li class="help-item toys">Toys</li>
+    // <li class="help-item bowls">Bowls and cups</li>
+    // <li class="help-item shampoos">Shampoos</li>
+    // <li class="help-item vitamins">Vitamins</li>
+    // <li class="help-item medicines">Medicines</li>
+    // <li class="help-item collars">Collars / leashes</li>
+    // <li class="help-item areas">Sleeping areas</li>
 }

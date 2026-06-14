@@ -19,6 +19,8 @@ export default defineConfig({
   resolve: {
     alias: {
       '/backgrounds': path.resolve(__dirname, './public/backgrounds'),
+      '/contactsIcons': path.resolve(__dirname, './public/contactsIcons'),
+      '/howHelp': path.resolve(__dirname, './public/howHelp'),
     }
   }
 });
