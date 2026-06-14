@@ -15,4 +15,10 @@ export default defineConfig({
     compact: false,
     sourcemap: true
   },
+
+  resolve: {
+    alias: {
+      '/backgrounds': path.resolve(__dirname, './public/backgrounds'),
+    }
+  }
 });

@@ -3,7 +3,7 @@
     display: flex;
     background-color: $colorLightL;
     .background {
-        background-image: url("./backgrounds/donation-dog.png");
+        background-image: url("/backgrounds/donation-dog.png");
         width: 54%;
         background-position-y: 90px;
         background-repeat: no-repeat;
@@ -38,7 +38,7 @@
         .link {
             padding-left: 60px;
             padding-top: 11px;
-            background-image: url("./backgrounds/credit-card.svg");
+            background-image: url("/backgrounds/credit-card.svg");
             background-repeat: no-repeat;
             background-position-x: 14px;
             background-position-y: center;
