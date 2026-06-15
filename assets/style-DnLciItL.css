@@ -605,10 +605,11 @@ a {
 .section-pets .pagination .pagination-button:hover {
   background-color: #fddcc4;
   border-color: #fddcc4;
-  pointer-events: none;
+  cursor: pointer;
 }
 .section-pets .pagination .pagination-button.counter {
   background-color: #f1cdb3;
+  cursor: auto;
 }
 .section-pets .pagination .pagination-button.disabled {
   border-color: #cdcdcd;
