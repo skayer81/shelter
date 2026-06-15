@@ -9,6 +9,9 @@
         display: flex;
         justify-content: space-between;
     }
+    .logo {
+        border: none;
+    }
     .logo:hover {
         .header-title {
             transition: 0.5s;

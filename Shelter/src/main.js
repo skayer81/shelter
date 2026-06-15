@@ -26,10 +26,15 @@ class App {
      page: null,
       href: 'footer'
     },
-            {buttonElement:  document.getElementById('GetToKnowButton'),
+      {buttonElement:  document.getElementById('GetToKnowButton'),
      page: 'pets',
       href: 'header'
     },
+        {buttonElement:  document.getElementById('logoButton'),
+      page: 'main',
+      href: ''
+    },
+
 
 ];
 
