@@ -28,6 +28,8 @@ class App {
 
 ];
 
+  header = document.getElementById('header')
+
   currentPage = 'main';
 
   constructor(){
@@ -43,6 +45,12 @@ class App {
   }
 
   buttonClick = (page, href) => {
+    this.navigateTo(page, href)
+    this.setHeaderStyles(page);
+    
+  }
+
+  navigateTo = (page, href) => {
      if (!page){
        page = this.currentPage;
      }
@@ -52,7 +60,11 @@ class App {
        this.PAGES[this.currentPage].removeAttribute('hidden');
     }
       if (href) document.location =`#${href}`;
-    
+  }
+
+  setHeaderStyles = (page) => {
+    this.header.classList.toggle('home', page = 'main');
+    this.header.classList.toggle('pets', page = 'pets')
   }
 }
 
