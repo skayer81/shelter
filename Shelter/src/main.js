@@ -12,11 +12,11 @@ class App {
  buttonsArray = [
     {buttonElement:  document.getElementById('aboutButton'),
      page: 'main',
-     href: ''
+     href: 'header'
     },
         {buttonElement:  document.getElementById('petsButton'),
      page: 'pets',
-      href: ''
+      href: 'header'
     },
         {buttonElement:  document.getElementById('helpButton'),
      page: 'main',
@@ -25,6 +25,10 @@ class App {
         {buttonElement:  document.getElementById('contactsButton'),
      page: null,
       href: 'footer'
+    },
+            {buttonElement:  document.getElementById('GetToKnowButton'),
+     page: 'pets',
+      href: 'header'
     },
 
 ];
