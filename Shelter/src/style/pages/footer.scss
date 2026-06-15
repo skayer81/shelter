@@ -61,4 +61,13 @@
         background-position-y: bottom;
         background-position-x: right;
     }
+    .place {
+        background-image: url("/contactsIcons/pin.svg");
+    }
+    .tel {
+        background-image: url("/contactsIcons/phone.svg");
+    }
+    .mail {
+        background-image: url("/contactsIcons/mail.svg");
+    }
 }
