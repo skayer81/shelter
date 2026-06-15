@@ -1,12 +1,63 @@
 import './style/style.scss';
 
-let currentPage = 1;
 
-const buttonsArray = [
-  document.getElementById('about'),
-  document.getElementById('pets'),
-  document.getElementById('help'),
-  document.getElementById('contacts')
+class App {
+
+  PAGES = {
+      main: document.getElementById('mainPage'),
+      pets: document.getElementById('petsPage')
+    };
+
+ buttonsArray = [
+    {buttonElement:  document.getElementById('aboutButton'),
+     pageKey: 'main',
+     href: ''
+    },
+        {buttonElement:  document.getElementById('petsButton'),
+     page: 'pets',
+      href: ''
+    },
+        {buttonElement:  document.getElementById('helpButton'),
+     page: 'main',
+      href: 'help'
+    },
+        {buttonElement:  document.getElementById('contactsButton'),
+     page: null,
+      href: 'footer'
+    },
+
 ];
+
+  currentPage = 'main';
+
+  constructor(){
+    this.addOnClick();
+  }
+
+  addOnClick = () => {
+    this.buttonsArray.forEach((button) => {
+        button.buttonElement.addEventListener('click',() => {
+            this.buttonClick(button.page,button.href)
+        })
+    })
+  }
+
+  buttonClick = (page, href) => {
+     if (!page){
+       page = this.currentPage;
+     }
+     if (page != this.currentPage) {
+       this.PAGES[this.currentPage].setAttribute('hidden', '');
+       this.currentPage = page;
+       this.PAGES[this.currentPage].removeAttribute('hidden');
+    }
+      if (href) document.location =`#${href}`;
+    
+  }
+}
+
+new App()
+
+
 
 
