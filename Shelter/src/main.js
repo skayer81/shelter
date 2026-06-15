@@ -45,6 +45,9 @@ class App {
   constructor(){
     this.addOnClick();
     this.animations = new Animations();
+    document.getElementById('logoButton').addEventListener('click', (event) => 
+      event.preventDefault()
+    )
   }
 
   addOnClick = () => {
