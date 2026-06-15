@@ -115,6 +115,14 @@ a {
   transition: 0.5s;
   color: #fddcc4;
 }
+.header.pets .logo:hover .header-title {
+  transition: 0.5s;
+  color: #292929;
+}
+.header.pets .logo:hover .header-subtitle {
+  transition: 0.5s;
+  color: #292929;
+}
 .header .header-title {
   color: #f1cdb3;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -135,9 +143,6 @@ a {
   letter-spacing: 0.1em;
   text-align: left;
 }
-.header.pets .header-subtitle, .header.pets .header-title {
-  color: #545454;
-}
 .header .navigation {
   display: flex;
   align-items: center;
@@ -146,10 +151,7 @@ a {
   display: flex;
   column-gap: 36px;
 }
-.header .navigation .navigation-list.active {
-  color: #fafafa;
-}
-.header .navigation .navigation-list .nav-button {
+.header .nav-button {
   border: none;
   padding: 0;
   color: #cdcdcd;
@@ -159,31 +161,34 @@ a {
   transition: 0.5s;
   border-bottom: 3px solid transparent;
 }
-.header .navigation .navigation-list .nav-button:hover {
-  color: #fddcc4;
+.header .nav-button:hover, .header .nav-button.active {
+  color: #fafafa;
 }
-.header.home .nav-button.home-active {
-  color: #f6f6f6;
+.header.home .home-active {
+  color: #fafafa;
   border-bottom: 2px solid #f1cdb3;
   cursor: auto;
 }
-.header.home .nav-button.home-active:hover {
-  color: #f6f6f6;
-}
-.header.pets .navigation .navigation-list .nav-button {
+.header.pets .header-subtitle, .header.pets .header-title {
   color: #545454;
-  transition: 0.5s;
 }
-.header.pets .navigation .navigation-list .nav-button.pets-active {
+.header.pets .logo:hover .header-title,
+.header.pets .logo:hover .header-subtitle {
+  color: #292929;
+}
+.header.pets .nav-button {
+  color: #545454;
+}
+.header.pets .nav-button.pets-active {
   color: #292929;
   border-bottom: 3px solid #f1cdb3;
   cursor: auto;
 }
-.header.pets .navigation .navigation-list .nav-button.pets-active:hover {
+.header.pets .nav-button.pets-active:hover {
   color: #292929;
 }
-.header.pets .navigation .navigation-list .nav-button:hover {
-  color: #fddcc4;
+.header.pets .nav-button:hover {
+  color: #292929;
 }
 
 .section1 {
