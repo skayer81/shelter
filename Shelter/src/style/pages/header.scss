@@ -43,8 +43,8 @@
         letter-spacing: 0.1em;
         text-align: left;
     }
-    .pets .header-subtitle,
-    .pets .header-title {
+    &.pets .header-subtitle,
+    &.pets .header-title {
         color: $colorDarkL;
     }
 
@@ -81,7 +81,7 @@
         }
     }
 
-    .pets .navigation .navigation-list .nav-button {
+    &.pets .navigation .navigation-list .nav-button {
         color: $colorDarkL;
         transition: 0.5s;
         &.pets-active {

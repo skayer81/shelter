@@ -5,10 +5,12 @@ export default defineConfig({
   base: './',
 
   build: {
+    cssCodeSplit: false,
     rollupOptions: {
       base: './',
       input: {
-        main: resolve(__dirname, 'index.html')
+        main: resolve(__dirname, 'index.html'),
+        pets: resolve(__dirname, 'pets.html')
       },
     },
     minify: false,
