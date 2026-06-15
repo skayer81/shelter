@@ -90,10 +90,12 @@
             &:hover {
                 background-color: $colorPrimaryL;
                 border-color: $colorPrimaryL;
-                pointer-events: none;
+                cursor: pointer;
+                //   pointer-events: none;
             }
             &.counter {
                 background-color: $colorPrimary;
+                cursor: auto;
             }
             &.disabled {
                 border-color: $colorDarkS;
