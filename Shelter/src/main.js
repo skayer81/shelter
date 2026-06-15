@@ -1,4 +1,5 @@
 import './style/style.scss';
+import { Animations } from './animations.js';
 
 
 class App {
@@ -10,7 +11,7 @@ class App {
 
  buttonsArray = [
     {buttonElement:  document.getElementById('aboutButton'),
-     pageKey: 'main',
+     page: 'main',
      href: ''
     },
         {buttonElement:  document.getElementById('petsButton'),
@@ -34,6 +35,7 @@ class App {
 
   constructor(){
     this.addOnClick();
+    this.animations = new Animations();
   }
 
   addOnClick = () => {
@@ -44,27 +46,32 @@ class App {
     })
   }
 
-  buttonClick = (page, href) => {
-    this.navigateTo(page, href)
-    this.setHeaderStyles(page);
-    
-  }
-
-  navigateTo = (page, href) => {
-     if (!page){
-       page = this.currentPage;
-     }
-     if (page != this.currentPage) {
-       this.PAGES[this.currentPage].setAttribute('hidden', '');
-       this.currentPage = page;
-       this.PAGES[this.currentPage].removeAttribute('hidden');
+  buttonClick = async (pageKey, href) => {
+        if (!pageKey) {
+      pageKey = this.currentPage;
     }
-      if (href) document.location =`#${href}`;
+    
+    if (pageKey !== this.currentPage) {
+      const oldPage = this.PAGES[this.currentPage];
+      const newPage = this.PAGES[pageKey];
+      
+      await this.animations.removePageAnimations(oldPage);
+      
+      oldPage.setAttribute('hidden', '');
+      newPage.removeAttribute('hidden');
+      this.setHeaderStyles(pageKey);
+
+      await this.animations.showPageAnimations(newPage);
+      
+      this.currentPage = pageKey;
+    }
+    
+    if (href) document.location = `#${href}`;
   }
 
   setHeaderStyles = (page) => {
-    this.header.classList.toggle('home', page = 'main');
-    this.header.classList.toggle('pets', page = 'pets')
+    this.header.classList.toggle('home', page === 'main');
+    this.header.classList.toggle('pets', page === 'pets')
   }
 }
 
