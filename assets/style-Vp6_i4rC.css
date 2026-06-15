@@ -104,6 +104,9 @@ a {
   display: flex;
   justify-content: space-between;
 }
+.header .logo {
+  border: none;
+}
 .header .logo:hover .header-title {
   transition: 0.5s;
   color: #fddcc4;
