@@ -10,7 +10,7 @@ export default defineConfig({
       base: './',
       input: {
         main: resolve(__dirname, 'index.html'),
-        pets: resolve(__dirname, 'pets.html')
+       // pets: resolve(__dirname, 'pets.html')
       },
     },
     minify: false,
