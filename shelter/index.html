@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>shelter</title>
-  <script type="module" crossorigin src="./assets/main-Ckflbv-r.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/main-DMUvP-FV.css">
+  <script type="module" crossorigin src="./assets/main-D9BpbMot.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/style-CGaaGiCj.css">
 </head>
 
 <body>
@@ -19,10 +19,10 @@
       </a>
       <nav class="navigation">
         <menu class="navigation-list">
-          <li><button class="nav-button home-active">About the shelter</button></li>
-          <li><button class="nav-button pets-active">Our pets</button></li>
-          <li><button class="nav-button">Help the shelter</button></li>
-          <li><button class="nav-button">Contacts</button></li>
+          <li><span id="aboutButton" href="" class="nav-button home-active">About the shelter</span></li>
+          <li><a id="petsButton" href="./pets.html" class="nav-button pets-active">Our pets</a></li>
+          <li><a id="helpButton" href="#help" class="nav-button">Help the shelter</a></li>
+          <li><a id="contactsButton" href="#footer" class="nav-button">Contacts</a></li>
         </menu>
       </nav>
     </div>
@@ -71,7 +71,8 @@
                 <h3 class="title">Woody</h3><button class="cardbutton">Learn more</button>
               </article>
             </div><button class="rightbutton button"></button>
-          </div><button class="section3button">Get to know the rest</button>
+          </div><button class="section3button" onclick="window.location.href = './pets.html'">Get to know the
+            rest</button>
         </div>
       </section>
       <section class="section4" id="help">
@@ -107,47 +108,6 @@
       </section>
     </div>
   </main>
-  <main hidden>
-    <div>
-      <section class="section-pets">
-        <div class="container">
-          <h2 class="title section-title">Our friends who are&nbsp;looking for a house</h2>
-          <div class="section-cards">
-            <article class="slider-card"><img class="img" src="./pets/pets-katrine.png" alt="Katrine">
-              <h3 class="title">Katrine</h3><button class="cardbutton">Learn more</button>
-            </article>
-            <article class="slider-card"><img class="img" src="./pets/pets-jennifer.png" alt="Jennifer">
-              <h3 class="title">Jennifer</h3><button class="cardbutton">Learn more</button>
-            </article>
-            <article class="slider-card"><img class="img" src="./pets/pets-woody.png" alt="Woody">
-              <h3 class="title">Woody</h3><button class="cardbutton">Learn more</button>
-            </article>
-            <article class="slider-card"><img class="img" src="./pets/pets-sophia.png" alt="Sophia">
-              <h3 class="title">Sophia</h3><button class="cardbutton">Learn more</button>
-            </article>
-            <article class="slider-card"><img class="img" src="./pets/pets-timmy.png" alt="Timmy">
-              <h3 class="title">Timmy</h3><button class="cardbutton">Learn more</button>
-            </article>
-            <article class="slider-card"><img class="img" src="./pets/pets-charly.png" alt="Charly">
-              <h3 class="title">Charly</h3><button class="cardbutton">Learn more</button>
-            </article>
-            <article class="slider-card"><img class="img" src="./pets/pets-scarlet.png" alt="Scarlett">
-              <h3 class="title">Scarlett</h3><button class="cardbutton">Learn more</button>
-            </article>
-            <article class="slider-card"><img class="img" src="./pets/pets-freddie.png" alt="Freddie">
-              <h3 class="title">Freddie</h3><button class="cardbutton">Learn more</button>
-            </article>
-          </div>
-          <div class="pagination"><button class="pagination-button disabled" disabled="">&lt;&lt;</button><button
-              class="pagination-button disabled" disabled="">&lt;</button>
-            <div class="pagination-button counter">1</div><button class="pagination-button">&gt;</button><button
-              class="pagination-button">&gt;&gt;</button>
-          </div>
-        </div>
-      </section>
-    </div>
-  </main>
-
   <footer class="footer" id="footer">
     <div class="container">
       <address class="contacts">

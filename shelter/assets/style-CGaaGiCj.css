@@ -132,8 +132,7 @@ a {
   letter-spacing: 0.1em;
   text-align: left;
 }
-.header .pets .header-subtitle,
-.header .pets .header-title {
+.header.pets .header-subtitle, .header.pets .header-title {
   color: #545454;
 }
 .header .navigation {
@@ -168,19 +167,19 @@ a {
 .header.home .nav-button.home-active:hover {
   color: #f6f6f6;
 }
-.header .pets .navigation .navigation-list .nav-button {
+.header.pets .navigation .navigation-list .nav-button {
   color: #545454;
   transition: 0.5s;
 }
-.header .pets .navigation .navigation-list .nav-button.pets-active {
+.header.pets .navigation .navigation-list .nav-button.pets-active {
   color: #292929;
   border-bottom: 3px solid #f1cdb3;
   cursor: auto;
 }
-.header .pets .navigation .navigation-list .nav-button.pets-active:hover {
+.header.pets .navigation .navigation-list .nav-button.pets-active:hover {
   color: #292929;
 }
-.header .pets .navigation .navigation-list .nav-button:hover {
+.header.pets .navigation .navigation-list .nav-button:hover {
   color: #fddcc4;
 }
 
@@ -330,6 +329,7 @@ a {
   text-align: center;
   border-radius: 9px;
   transition: 0.5s;
+  cursor: pointer;
 }
 .section3 .slider .slider-card:hover {
   box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.0392156863);
@@ -552,6 +552,7 @@ a {
   background-color: #fafafa;
   text-align: center;
   transition: 0.5s;
+  cursor: pointer;
 }
 .section-pets .slider-card:hover {
   box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.0392156863);
@@ -669,6 +670,16 @@ a {
   background-repeat: no-repeat;
   background-position-y: bottom;
   background-position-x: right;
+  background-image: url("../backgrounds/footer-puppy.png");
+}
+.footer .place {
+  background-image: url("../contactsIcons/pin.svg");
+}
+.footer .tel {
+  background-image: url("../contactsIcons/phone.svg");
+}
+.footer .mail {
+  background-image: url("../contactsIcons/mail.svg");
 }
 
 .container {
@@ -692,4 +703,4 @@ a:hover {
 button,
 a {
   transition: 0.5s;
-}
+}/*$vite$:1*/

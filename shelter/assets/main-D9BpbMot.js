@@ -29,3 +29,8 @@
 	}
 })();
 //#endregion
+//#region src/main.js
+document.getElementById("about"), document.getElementById("pets"), document.getElementById("help"), document.getElementById("contacts");
+//#endregion
+
+//# sourceMappingURL=main-D9BpbMot.js.map
