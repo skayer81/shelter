@@ -1,0 +1,26 @@
+@import "./fonts.scss";
+@import "./normalaize.scss";
+@import "./pages/header.scss";
+@import "./pages/mainPage.scss";
+@import "./pages/petsPage.scss";
+@import "./pages/footer.scss";
+
+.container {
+    max-width: 1280px;
+    padding: 0 40px;
+    margin: 0 auto;
+    display: flex;
+    @media (max-width: 760px) {
+        padding: 0 16px;
+    }
+}
+
+button:hover,
+a:hover {
+    transition: 0.5s;
+    cursor: pointer;
+}
+button,
+a {
+    transition: 0.5s;
+}

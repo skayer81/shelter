@@ -1,0 +1,71 @@
+@import "./../../variables.scss";
+.section5 {
+    display: flex;
+    background-color: $colorLightL;
+    .background {
+        background-image: url("/backgrounds/donation-dog.png");
+        width: 54%;
+        background-position-y: 90px;
+        background-repeat: no-repeat;
+        background-position-x: right;
+    }
+    .content {
+        width: 46%;
+        padding-left: 30px;
+        padding-right: 150px;
+
+        padding-top: 79px;
+        padding-bottom: 99px;
+
+        .title {
+            padding-right: 55px;
+            font-family: Georgia;
+            font-size: 35px;
+            font-weight: 400;
+            line-height: 45.5px;
+            letter-spacing: 0.06em;
+            color: $colorDarkL;
+        }
+        .link-title {
+            margin-top: 22px;
+            font-family: Georgia;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 16.5px;
+            letter-spacing: 0.06em;
+            color: $colorDarkL;
+        }
+        .link {
+            padding-left: 60px;
+            padding-top: 11px;
+            background-image: url("/backgrounds/credit-card.svg");
+            background-repeat: no-repeat;
+            background-position-x: 14px;
+            background-position-y: center;
+            margin-top: 17px;
+            display: block;
+            background-color: $colorPrimary;
+            height: 43px;
+            width: 349px;
+            border-radius: 9px;
+            font-family: Georgia;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 23px;
+            letter-spacing: 0.06em;
+            color: $colorDarkL;
+            &:hover {
+                background-color: $colorPrimaryL;
+            }
+        }
+        .description {
+            margin-top: 21px;
+            color: $colorDarkM;
+            font-family: Arial;
+            font-size: 12px;
+            font-style: italic;
+            font-weight: 400;
+            line-height: 18px;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+$colorLightL: #f6f6f6;
+$colorLightS: #fafafa;
+$colorLightXL: #fff;
+$colorDarkS: #cdcdcd;
+$colorDarkL: #545454;
+$colorDarkXL: #4c4c4c;
+$colorDark3XL: #292929;
+$colorDarkM: #b2b2b2;
+
+$colorPrimary: #f1cdb3;
+$colorPrimaryL: #fddcc4;
+
+%flex-element-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%container {
+    max-width: 1280px;
+    padding: 0 40px;
+    margin: 0 auto;
+    @media (max-width: 760px) {
+        padding: 0 16px;
+    }
+}
+
+%border {
+    border: 1px solid red;
+}

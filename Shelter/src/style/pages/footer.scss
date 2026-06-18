@@ -1,0 +1,74 @@
+@import "./../variables.scss";
+.footer {
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    font-style: normal;
+    background:
+        url("/backgrounds/background.png"),
+        radial-gradient(237.5% 111.8% at 0% 0%, rgb(91, 72, 58) 0%, rgb(38, 36, 37) 100%);
+    .contacts {
+        width: 439px;
+        padding-top: 56px;
+        margin-bottom: 20px;
+    }
+    .link {
+        display: block;
+        color: $colorPrimary;
+        font-family: Georgia;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 23px;
+
+        background-repeat: no-repeat;
+        background-position-x: left;
+        background-position-y: center;
+        font-style: normal;
+        min-height: 32px;
+        padding-top: 5px;
+        &.right-link {
+            padding-left: 41px;
+            margin-bottom: 32px;
+            width: 300px;
+        }
+        &.left-link {
+            padding-left: 61px;
+            margin-bottom: 40px;
+            margin-top: 39px;
+        }
+        &:hover {
+            color: $colorLightL;
+        }
+    }
+    .title {
+        color: $colorLightXL;
+        font-family: Georgia;
+        font-size: 35px;
+        font-style: normal;
+        letter-spacing: 2px;
+        line-height: 45.5px;
+        font-weight: 400;
+        width: 300px;
+        margin-bottom: 29px;
+        // mask-image: url("./../../../dist/contactsIcons/mail.svg");
+        // mask-repeat: no-repeat;
+        // background-color: red;
+        //  filter: hue-rotate(90deg);
+    }
+
+    .footer-back {
+        width: 321px;
+        background-repeat: no-repeat;
+        background-position-y: bottom;
+        background-position-x: right;
+        background-image: url("/backgrounds/footer-puppy.png");
+    }
+    .place {
+        background-image: url("/contactsIcons/pin.svg");
+    }
+    .tel {
+        background-image: url("/contactsIcons/phone.svg");
+    }
+    .mail {
+        background-image: url("/contactsIcons/mail.svg");
+    }
+}
