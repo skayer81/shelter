@@ -8,6 +8,34 @@
     .container {
         display: flex;
         justify-content: space-between;
+        @media screen and (max-width: 800px) {
+            padding: 0 30px;
+        }
+        @media screen and (max-width: 700px) {
+            padding: 0 20px;
+        }
+        .burger-button {
+            width: 30px;
+            height: 22px;
+            border: none;
+            padding: 0;
+            background-color: transparent;
+            display: none;
+            @media screen and (max-width: 767.5px) {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin-top: 19px;
+                // margin-left: 0;
+                margin-right: 1px;
+            }
+            .line {
+                display: block;
+                height: 2px;
+                width: 100%;
+                background-color: $colorPrimary;
+            }
+        }
     }
     .logo {
         border: none;
@@ -61,6 +89,9 @@
         .navigation-list {
             display: flex;
             column-gap: 36px;
+        }
+        @media screen and (max-width: 767.5px) {
+            display: none;
         }
     }
     .nav-button {
