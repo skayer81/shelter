@@ -2,6 +2,12 @@
 .section2 {
     .container {
         display: flex;
+        @media screen and (max-width: 1100px) {
+            // background: black;
+            flex-direction: column-reverse;
+            // height: 593px;
+            // width: 100%;
+        }
     }
     .back {
         background-image: url("/backgrounds/about-pets.png");
@@ -10,6 +16,25 @@
         background-repeat: no-repeat;
         background-position-x: 175px;
         background-position-y: 79px;
+        @media screen and (max-width: 1100px) {
+            // background: black;
+            // flex-direction: column;
+            height: 500px;
+            width: 100%;
+            // padding-left: 129px;
+            // padding-right: 129px;
+            margin-left: 19px;
+            margin-bottom: 86px;
+        }
+        @media screen and (max-width: 760px) {
+            margin-left: 0;
+            margin-top: 39px;
+            background-position-x: center;
+            background-position-y: bottom;
+            background-size: contain;
+            height: 355px;
+            margin-bottom: 43px;
+        }
     }
     .content {
         padding-top: 93px;
@@ -22,6 +47,23 @@
         font-size: 15px;
 
         line-height: 24px;
+        @media screen and (max-width: 1100px) {
+            // background: black;
+            //flex-direction: column;
+            // height: 500px;
+            width: 100%;
+            padding-top: 81px;
+            padding-left: 134px;
+            padding-right: 129px;
+            padding-bottom: 0;
+        }
+        @media screen and (max-width: 670px) {
+            // font-family: Georgia;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 42px;
+            margin: 0 auto;
+        }
         .title {
             color: $colorDarkL;
             padding-right: 20px;
@@ -30,9 +72,23 @@
             font-weight: 400;
             line-height: 45.5px;
             letter-spacing: 0.06em;
+            @media screen and (max-width: 670px) {
+                // font-family: Georgia;
+                font-size: 25px;
+                //font-weight: 400;
+                line-height: 32.5px;
+                padding-right: 0;
+
+                text-align: center;
+                margin-bottom: 25px;
+            }
         }
         .description {
             margin-top: 25px;
+            @media screen and (max-width: 670px) {
+                text-align: justify;
+                margin-top: 21px;
+            }
         }
     }
 }
