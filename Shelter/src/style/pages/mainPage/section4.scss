@@ -2,10 +2,20 @@
 .section4 {
     padding-top: 79px;
     padding-bottom: 70px;
+    @media (max-width: 760px) {
+        padding-top: 42px;
+        padding-bottom: 37px;
+    }
 
     .container {
         flex-direction: column;
         align-items: center;
+        @media (max-width: 760px) {
+            padding: 0 30px;
+        }
+        @media (max-width: 500px) {
+            padding: 0 15px;
+        }
     }
     .title {
         text-align: center;
@@ -17,6 +27,17 @@
         letter-spacing: 0.06em;
 
         color: $colorDarkL;
+        @media screen and (max-width: 450px) {
+            //styleName: h3-mobile;
+            //    font-family: Georgia;
+            font-size: 25px;
+            //   font-weight: 400;
+            line-height: 32.5px;
+            //   letter-spacing: 0.06em;
+            //  text-align: center;
+            width: auto;
+            padding: 0 15px;
+        }
     }
     .help-list {
         margin-top: 60px;
@@ -26,6 +47,16 @@
         align-items: center;
         row-gap: 25px;
         column-gap: 120px;
+        @media screen and (max-width: 1100px) {
+            column-gap: 40px;
+        }
+        @media screen and (max-width: 500px) {
+            // column-gap: 40px;
+            justify-content: flex-start;
+            // padding-left: 16px;
+            column-gap: 30px;
+            margin-top: 40px;
+        }
     }
     .help-item {
         height: 143px;
@@ -40,6 +71,22 @@
         letter-spacing: 0.06em;
         text-align: center;
         padding-top: 89px;
+        @media screen and (max-width: 800px) {
+            min-width: 190px;
+        }
+        @media screen and (max-width: 500px) {
+            //styleName: h5;
+            //font-family: Georgia;
+            font-size: 15px;
+            //font-weight: 400;
+            line-height: 16.5px;
+            //letter-spacing: 0.06em;
+            //text-align: center;
+            height: 92px;
+            background-size: 51px 51px;
+            min-width: 130px;
+            padding-top: 72px;
+        }
     }
 
     .food {
@@ -69,12 +116,4 @@
     .areas {
         background-image: url("./../../../../public/howHelp/sleeping-area.svg");
     }
-    // <li class="help-item transportation">Transportation</li>
-    // <li class="help-item toys">Toys</li>
-    // <li class="help-item bowls">Bowls and cups</li>
-    // <li class="help-item shampoos">Shampoos</li>
-    // <li class="help-item vitamins">Vitamins</li>
-    // <li class="help-item medicines">Medicines</li>
-    // <li class="help-item collars">Collars / leashes</li>
-    // <li class="help-item areas">Sleeping areas</li>
 }
