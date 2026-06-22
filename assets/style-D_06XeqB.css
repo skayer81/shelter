@@ -537,11 +537,13 @@ a {
 .section3 .slider .slider-container {
   display: flex;
   column-gap: 89px;
+  justify-content: space-around;
   margin: 0 53px;
 }
 @media screen and (max-width: 1200px) {
   .section3 .slider .slider-container {
     column-gap: 40px;
+    margin: 0 12px;
   }
   .section3 .slider .slider-container .slider-card:nth-child(3) {
     display: none;
@@ -797,7 +799,6 @@ a {
     width: 100%;
     padding-bottom: 0;
     padding-left: 152px;
-    padding-right: 162px;
   }
 }
 @media screen and (max-width: 750px) {
@@ -817,6 +818,11 @@ a {
   line-height: 45.5px;
   letter-spacing: 0.06em;
   color: #545454;
+}
+@media screen and (max-width: 1200px) {
+  .section5 .content .title {
+    padding-right: 66px;
+  }
 }
 @media screen and (max-width: 750px) {
   .section5 .content .title {
@@ -1020,7 +1026,6 @@ a {
   }
 }
 .footer .contacts {
-  width: 439px;
   padding-top: 56px;
   margin-bottom: 20px;
 }
