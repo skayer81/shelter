@@ -74,9 +74,11 @@
             display: flex;
 
             column-gap: 89px;
+            justify-content: space-around;
             margin: 0 53px;
             @media screen and (max-width: 1200px) {
                 column-gap: 40px;
+                margin: 0 12px;
                 .slider-card:nth-child(3) {
                     display: none;
                 }
