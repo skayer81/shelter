@@ -3,11 +3,20 @@
 .section3 {
     background-color: $colorLightL;
     padding-bottom: 101px;
+    @media screen and (max-width: 450px) {
+        padding-bottom: 42px;
+    }
 
     .container {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        @media screen and (max-width: 1200px) {
+            padding: 0 30px;
+        }
+        @media screen and (max-width: 450px) {
+            padding: 0 15px;
+        }
     }
     .title {
         color: $colorDarkL;
@@ -21,11 +30,26 @@
     .section-title {
         padding-top: 78px;
         width: 470px;
+        @media screen and (max-width: 1100px) {
+            padding-top: 81px;
+        }
+        @media screen and (max-width: 500px) {
+            font-size: 25px;
+            line-height: 32.5px;
+            width: auto;
+            padding-top: 42px;
+        }
     }
     .slider {
         display: flex;
         align-items: center;
         margin-top: 60px;
+        @media screen and (max-width: 450px) {
+            flex-wrap: wrap;
+            margin-top: 41px;
+            justify-content: center;
+            column-gap: 80px;
+        }
         .button {
             width: 52px;
             height: 52px;
@@ -34,6 +58,10 @@
             background-image: url("/backgrounds/arrow.png");
             background-repeat: no-repeat;
             background-position: center;
+            @media screen and (max-width: 450px) {
+                order: 1;
+                margin-top: 20px;
+            }
             &.rightbutton {
                 transform: rotate(0.5turn);
             }
@@ -47,6 +75,20 @@
 
             column-gap: 89px;
             margin: 0 53px;
+            @media screen and (max-width: 1200px) {
+                column-gap: 40px;
+                .slider-card:nth-child(3) {
+                    display: none;
+                }
+            }
+            @media screen and (max-width: 760px) {
+                .slider-card:nth-child(2) {
+                    display: none;
+                }
+            }
+            @media screen and (max-width: 450px) {
+                width: 100%;
+            }
         }
         .slider-card {
             width: 270px;
@@ -69,6 +111,9 @@
                 margin-top: 32px;
                 font-size: 20px;
                 line-height: 22.72px;
+                @media screen and (max-width: 1200px) {
+                    margin-top: 29px;
+                }
             }
             .cardbutton {
                 color: $colorDark3XL;
@@ -104,5 +149,14 @@
             background-color: $colorPrimaryL;
             border-color: $colorPrimaryL;
         }
+
+        @media screen and (max-width: 1200px) {
+            margin-top: 59px;
+        }
+        @media screen and (max-width: 600px) {
+            margin-top: 42px;
+        }
     }
 }
+
+//1408 120 1464 1516 1504 161 8229231 8230334
