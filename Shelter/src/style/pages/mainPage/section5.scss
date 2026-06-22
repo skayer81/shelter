@@ -2,12 +2,35 @@
 .section5 {
     display: flex;
     background-color: $colorLightL;
+    .container {
+        @media screen and (max-width: 1120px) {
+            flex-direction: column-reverse;
+            //  padding: 0 162px;
+            // padding-bottom: 60px;
+        }
+        @media screen and (max-width: 500px) {
+            padding: 0 20px;
+        }
+    }
     .background {
         background-image: url("/backgrounds/donation-dog.png");
         width: 54%;
         background-position-y: 90px;
         background-repeat: no-repeat;
         background-position-x: right;
+        @media screen and (max-width: 1120px) {
+            width: 100%;
+            height: 379px;
+            background-position-x: center;
+            background-position-y: center;
+            margin-bottom: 41px;
+        }
+        @media screen and (max-width: 750px) {
+            background-size: contain;
+            width: 94%;
+            height: 218px;
+            margin: 0 auto;
+        }
     }
     .content {
         width: 46%;
@@ -16,6 +39,20 @@
 
         padding-top: 79px;
         padding-bottom: 99px;
+        @media screen and (max-width: 1120px) {
+            width: 100%;
+            padding-bottom: 0;
+            padding-left: 152px;
+            padding-right: 162px;
+        }
+        @media screen and (max-width: 750px) {
+            //  width: 100%;
+            padding-bottom: 0;
+            padding-left: 0;
+            padding-right: 0;
+            text-align: center;
+            padding-top: 43px;
+        }
 
         .title {
             padding-right: 55px;
@@ -25,6 +62,15 @@
             line-height: 45.5px;
             letter-spacing: 0.06em;
             color: $colorDarkL;
+            @media screen and (max-width: 750px) {
+                padding-right: 0;
+            }
+            @media screen and (max-width: 500px) {
+                font-size: 25px;
+
+                line-height: 32.5px;
+                padding: 0 30px;
+            }
         }
         .link-title {
             margin-top: 22px;
@@ -34,6 +80,20 @@
             line-height: 16.5px;
             letter-spacing: 0.06em;
             color: $colorDarkL;
+            @media screen and (max-width: 500px) {
+                // font-family: Georgia;
+                //  font-size: 15px;
+                //  font-weight: 400;
+                line-height: 24px;
+                //  text-align: left;
+                font-family: Georgia;
+                // font-size: 15px;
+                // font-weight: 400;
+                // line-height: 24px;
+                // text-align: left;
+                letter-spacing: 0;
+                margin-top: 19px;
+            }
         }
         .link {
             padding-left: 60px;
@@ -54,6 +114,24 @@
             line-height: 23px;
             letter-spacing: 0.06em;
             color: $colorDarkL;
+            @media screen and (max-width: 750px) {
+                //  width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            @media screen and (max-width: 500px) {
+                //  width: 100%;
+                //   font-family: Georgia;
+                font-size: 15px;
+                //  font-weight: 400;
+                line-height: 16.5px;
+                //  letter-spacing: 0.06em;
+                //  text-align: left;
+                width: auto;
+                margin-top: 20px;
+                padding-left: 44px;
+                padding-top: 15px;
+            }
             &:hover {
                 background-color: $colorPrimaryL;
             }
@@ -66,6 +144,9 @@
             font-style: italic;
             font-weight: 400;
             line-height: 18px;
+            @media screen and (max-width: 500px) {
+                text-align: justify;
+            }
         }
     }
 }
