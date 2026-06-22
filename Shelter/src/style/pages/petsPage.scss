@@ -3,6 +3,12 @@
 .section-pets {
     background-color: $colorLightL;
     padding-bottom: 101px;
+    @media screen and (max-width: 900px) {
+        padding-bottom: 78px;
+    }
+    @media screen and (max-width: 600px) {
+        padding-bottom: 46px;
+    }
 
     .container {
         flex-direction: column;
@@ -22,6 +28,21 @@
         padding-top: 78px;
         width: 470px;
         margin-bottom: 60px;
+        @media screen and (max-width: 900px) {
+            margin-bottom: 31px;
+        }
+        @media screen and (max-width: 500px) {
+            margin-bottom: 41px;
+            //styleName: h3-mobile;
+
+            font-size: 25px;
+
+            line-height: 32.5px;
+            // letter-spacing: 0.06em;
+            // text-align: center;
+            width: 100%;
+            padding-top: 42px;
+        }
     }
     .section-cards {
         display: flex;
@@ -30,6 +51,9 @@
         column-gap: 40px;
         flex-wrap: wrap;
         margin-bottom: 63px;
+        @media screen and (max-width: 900px) {
+            margin-bottom: 40px;
+        }
     }
 
     .slider-card {
@@ -66,11 +90,35 @@
             margin-top: 31px;
             border-radius: 40px;
         }
+        @media screen and (max-width: 900px) {
+            &:nth-child(7),
+            &:nth-child(8) {
+                display: none;
+            }
+            // background-size: contain;
+            // width: 94%;
+            // height: 218px;
+            // margin: 0 auto;
+        }
+        @media screen and (max-width: 600px) {
+            &:nth-child(4),
+            &:nth-child(5),
+            &:nth-child(6) {
+                display: none;
+            }
+            // background-size: contain;
+            // width: 94%;
+            // height: 218px;
+            // margin: 0 auto;
+        }
     }
     .pagination {
         display: flex;
         justify-content: center;
         column-gap: 22px;
+        @media screen and (max-width: 600px) {
+            column-gap: 12px;
+        }
 
         .pagination-button {
             display: flex;
