@@ -228,6 +228,9 @@ a {
 .header.pets .nav-button:hover {
   color: #292929;
 }
+.header.pets .container .burger-button .line {
+  background-color: black;
+}
 
 .section1 {
   background: url("../backgrounds/background.png"), radial-gradient(237.5% 111.8% at 0% 0%, rgb(91, 72, 58) 0%, rgb(38, 36, 37) 100%);
@@ -463,7 +466,7 @@ a {
   justify-content: center;
   align-items: center;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1230px) {
   .section3 .container {
     padding: 0 30px;
   }
@@ -540,7 +543,7 @@ a {
   justify-content: space-around;
   margin: 0 53px;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1230px) {
   .section3 .slider .slider-container {
     column-gap: 40px;
     margin: 0 12px;
